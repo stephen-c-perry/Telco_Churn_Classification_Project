@@ -16,10 +16,23 @@ This repo is for my first complete data science project.  I'll be using the telc
 
 
 2) initial hypotheses and/or questions you have of the data, ideas
-
+Does payment type impact churn? Does Mailed check payment have higher churn than electronic payment?  What payment types could be offered to reduce churn?
+Does internet service type impact churn?  Does older technology service types like DSL  have higher churn than more modern technology like Fiber?
+Does contract type impact churn? Do certain contract types have higher churn than others?
+Does streaming movies or tv impact churn? Would investing more in streaming services reduce churn?
+Does tenure impact churn?  Does tenure need to be rewarded to reduce churn?
 
 
 3) data dictionary
+
+
+| Feature | Definition |
+|:--------|:-----------|
+|payment_type| 1 = , 2 = , 3 = |
+|contract_type|1 = , 2 = , 3 = |
+|internet_service_type|1 = , 2 = , 3 = |
+|||
+
 
 
 
