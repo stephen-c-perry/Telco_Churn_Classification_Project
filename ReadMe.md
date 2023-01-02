@@ -31,6 +31,7 @@ Does tenure impact churn?  Does tenure need to be rewarded to reduce churn?
 |payment_type| 1 = , 2 = , 3 = |
 |contract_type|1 = , 2 = , 3 = |
 |internet_service_type|1 = , 2 = , 3 = |
+|gender| 1 = Male, 0 = Female|
 |||
 
 
@@ -38,6 +39,20 @@ Does tenure impact churn?  Does tenure need to be rewarded to reduce churn?
 
 4) project planning (lay out your process through the data science pipeline)
 
+1) Data Acquistion
+    pull telco data from SQL server
+
+2) Data Preperation
+    clean/prep data, drop or rename columns as needed, change datatypes as needed
+
+3) Exploratory Data Analysis and Statistic Testing
+    use matplotlib and seaborn to plot data and look for trends/possible relationships
+
+    use the appropriate statistics tests to check for relationship
+
+4) Modeling
+
+5) Model Evaluation
 
 
 

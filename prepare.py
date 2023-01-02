@@ -27,6 +27,7 @@ def prep_telco(telco_df):
         numerical_cols.append(col)
 
     telco_df.gender = telco_df.gender.replace('Male',1)
+    telco_df.gender = telco_df.gender.replace('Female',0)
     telco_df.dependents = telco_df.dependents.replace('Yes', 1).replace('No', 0)
     telco_df.phone_service = telco_df.phone_service.replace('Yes', 1).replace('No', 0)
     telco_df.paperless_billing = telco_df.paperless_billing.replace('Yes', 1).replace('No', 0)
