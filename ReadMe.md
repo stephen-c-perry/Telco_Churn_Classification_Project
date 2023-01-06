@@ -1,4 +1,7 @@
-This repo is for my first complete data science project.  I'll be using the telco churn dataset to predict customer churn.
+# Telco Churn Classification Project
+
+
+I'll be using the telco churn dataset to find drivers of churn and predict which current customers will churn.  This is important because it will help Telco retain customers and improve customer satisfaction.
 
 1) project description with goals
 
@@ -36,7 +39,6 @@ Does tenure impact churn?  Does tenure need to be rewarded to reduce churn?
 
 
 
-
 4) project planning (lay out your process through the data science pipeline)
 
 1) Data Acquistion
@@ -51,13 +53,18 @@ Does tenure impact churn?  Does tenure need to be rewarded to reduce churn?
     use the appropriate statistics tests to check for relationship
 
 4) Modeling
+In order to make predicitions on which customers will churn I will use several classification models. 
 
 5) Model Evaluation
-
+ I'll compare the accuracy of each model to the baseline and identify the most accurate model.
 
 
 5) instructions or an explanation of how someone else can reproduce your project and findings (What would someone need to be able to recreate your project on their own?)
+To reproduce my results download the dataset at the link below:
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
-
+Then clone this github and run the notebook final_report.ipynb
 
 6) key findings, recommendations, and takeaways from your project.
+
+To increase customer retention consider offering discounts for 2 year contracts.

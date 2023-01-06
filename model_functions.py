@@ -15,7 +15,7 @@ def best_performing_model(X_Train, y_Train, X_test, y_test):
     rf = RandomForestClassifier(max_depth=9, min_samples_leaf=3, random_state=123)
     rf.fit(X_Train, y_Train)
 
-    print('Best Model: Random Forest')
+    print('Random Forest')
     print(f"Test Accuracy: {rf.score(X_test, y_test):.2%}")
 
 
@@ -81,13 +81,13 @@ def get_knn():
     df1.sort_values(by=['validate_accuracy'], ascending=False).head(10)
 
 
-    
+
 
 #isolating target variable in train, validate, test sets
 def isolate_target():
-    
     df_telco = acquire.get_telco_data()
-    prepped_telco = prepare.prep_telco(df_telco)
+    df_telco = prepare.prep_telco(df_telco)
+    train, validate, test = prepare.split_data(df_telco)
 
     X_Train = train.drop(columns = ['churn_Yes', 'customer_id'])
     y_Train = train.churn_Yes
@@ -97,3 +97,27 @@ def isolate_target():
 
     X_test = test.drop(columns = ['churn_Yes', 'customer_id'])
     y_test = test.churn_Yes
+    return X_Train, y_Train, X_val, y_val, X_test, y_test
+        
+
+'''
+def get_baseline():
+    def isolate_target_2():
+        df_telco = acquire.get_telco_data()
+        df_telco = prepare.prep_telco(df_telco)
+        train, validate, test = prepare.split_data(df_telco)
+
+        X_Train = train.drop(columns = ['churn_Yes', 'customer_id'])
+        y_Train = train.churn_Yes
+
+        X_val = validate.drop(columns = ['churn_Yes', 'customer_id'])
+        y_val = validate.churn_Yes
+
+        X_test = test.drop(columns = ['churn_Yes', 'customer_id'])
+        y_test = test.churn_Yes
+        return X_Train, y_Train, X_val, y_val, X_test, y_test
+   
+    baseline = 1 - y_Train.mean()
+    baseline_percent = (baseline*100)
+    print(f'baseline equals:  {round(baseline_percent, 2)}%')
+'''
