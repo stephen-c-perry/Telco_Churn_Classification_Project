@@ -54,21 +54,21 @@ I'll be using the telco churn dataset to find drivers of churn and predict which
 
 4) Project Planning
 
-1) Data Acquistion
+- Data Acquistion
     pull telco data from SQL server
 
-2) Data Preperation
+- Data Preperation
     clean/prep data, drop or rename columns as needed, change datatypes as needed
 
-3) Exploratory Data Analysis and Statistic Testing
+- Exploratory Data Analysis and Statistic Testing
     use matplotlib and seaborn to plot data and look for trends/possible relationships
 
     use the appropriate statistics tests to check for relationship
 
-4) Modeling
+- Modeling
 In order to make predicitions on which customers will churn I will use several classification models. 
 
-5) Model Evaluation
+- Model Evaluation
  I'll compare the accuracy of each model to the baseline and identify the most accurate model.
 
 
